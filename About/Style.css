@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d1117;
+    color: white;
+    font-family: Nunito;
+}
+
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Head */
+
+.contactpage-heading {
+
+    text-align: center;
+    padding: 20px 40px;
+    background-color: #161b22;
+    font-family: 'Humane', sans-serif;
+    color: #ffff;
+    opacity: 9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 2rem;
+
+}
+
+.contactpage-heading>h1 {
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+.About-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:rgb(22, 27, 34);
+    color: #161b22;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 2rem;
+
+}
+
+.MyPic {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about_Image{
+    border-radius: 10px;
+    height: 28rem;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.Aboutme {
+    display: flex;
+    flex-direction: column;
+    font-family: Nunito;
+    font-size: 1.1rem;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+    text-align: left;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    color: white;
+    text-align: justify;
+}
+
+.special {
+    color:#d5ff3f;
+    font-weight: 500;
+}
+
+.about_Buttons .download-link {
+    display: flex;
+    align-items: center; 
+    text-decoration: none; 
+    font-size: 20px; 
+}
+
+.about_Buttons .download-link .fa-file {
+    margin-right: 8px;
+    color: #d5ff3f;
+    font-size: 20px; 
+}
+
+.about_Buttons .download-link .Para {
+    font-weight: bold; 
+    color: #d5ff3f; 
+}
+
+.carousel_sociallinks_container {
+    margin-top: 0;
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+}
+
+.skills_Container {
+    background-color:#161b22;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    padding: 30px;
+    text-align: left;
+}
+
+.h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.carousel {
+    display: flex;
+}
+
+.carousel-content {
+    height: fit-content;
+    white-space: nowrap;
+    width: 200%;
+    cursor: pointer;
+}
+
+.SocialLinks_Container, .Socials {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.SocialLinks_Container {
+    background-color:#161b22;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+
+.Socials {
+    flex-direction: row;
+    font-size: 2.5rem;
+    gap: 8px;
+    text-align: center;
+    
+}
+
+.Socials a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.Socials .Insta i {
+    color:#d5ff3f; 
+}
+
+.Socials .Github i {
+    color: #d5ff3f; 
+}
+
+.Socials .Linkedin i {
+    color: #d5ff3f;
+}
+
+.Socials .X i {
+    color: #d5ff3f; 
+}
+
+.Socials .YT i {
+    color: #d5ff3f; 
+}
+
+/* Footer */
+
+.footer-container,
+.footer-desc {
+    display: flex;
+    font-family: Nunito;
+}
+
+.footer-container {
+    align-items: center;
+    background-color: #161b22;
+    border-radius: 10px;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    padding: 40px 30px;
+    margin: 2rem;
+}
+
+.footer-logo {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.footer-Slogan {
+    align-items: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-userdesc {
+    color: #6c757d;
+    font-family: Humane;
+    font-size: 6rem;
+    font-weight: 400;
+    text-align: right;
+}
+
+.footer-userdesc>span {
+    color: #d5ff3f;
+}
+
+.footer-text {
+    color: #6c757d;
+    flex-direction: row;
+    font-family: Nunito;
+    gap: 10px;
+    text-align: right;
+}
+
+.Logo>img {
+    padding: 20px;
+    width: 260px;
+}
+
+.footer-text>pre {
+    font-family: Nunito;
+}
+
+.footer-text>p {
+    font-family: Nunito;
+    color: #6c757d;
+    text-align: end;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .contactpage-heading>h1 {
+        font-size: 3rem;
+    }
+
+    .About-container {
+        padding: 10px;
+        margin: 0.5rem;
+    }
+
+    .about_Image {
+        height: 12rem; 
+    }
+
+    .About-container {
+        flex-direction: column; 
+        padding: 20px;
+        margin: 1rem;
+    }
+
+    .carousel_sociallinks_container {
+        flex-direction: column;
+        margin: 1rem;
+        gap: 15px;
+    }
+
+    .skills_Container {
+        padding: 25px;
+        width: 92%;
+        text-align: center;
+        overflow:scroll ;
+    }
+
+
+    .h2 {
+        font-size: 1.2em;
+        margin-block: 0.5em;
+    }
+
+    .carousel-content {
+        width: 100%;
+    }
+
+    .SocialLinks_Container {
+        padding: 25px;
+        width: 92%;
+    }
+
+    .Socials {
+        font-size: 2rem;
+        gap: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Socials a {
+        font-size: 24px;
+        margin-right: 8px;
+    }
+
+    
+    .Para, .h2 {
+        font-size: 1rem;
+    }
+
+    .about_Buttons .download-link {
+        font-size: 0.8rem;
+    }
+
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .footer-userdesc {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .footer-Slogan,
+    .footer-logo {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-text>pre {
+
+        text-align: center;
+    }
+
+    .footer-text>p {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .field>textarea {
+        max-width: 90%;
+    }
+
+    .submit-btn {
+        max-width: 90%;
+    }
+
+
+    .field>input {
+        max-width: 90%;
+    }
+}
+
+/* Tablets */
+
+@media (min-width: 601px) and (max-width: 992px) {
+
+    .contactpage-heading>h1 {
+        font-size: 4rem;
+    }
+
+    .About-container {
+        flex-direction: column;
+        padding: 20px;
+        margin: 1rem;
+    }
+
+    .carousel_sociallinks_container {
+        flex-direction: column;
+        margin: 1.5rem;
+        gap: 20px;
+    }
+
+    .skills_Container {
+        padding: 25px;
+        width: 92%;
+        text-align: center;
+    }
+
+    .carousel-content {
+        width: 150%;
+    }
+
+    .SocialLinks_Container {
+        padding: 30px;
+        width: 92%;
+    }
+
+    .Socials {
+        font-size: 2.2rem;
+        gap: 6px;
+    }
+
+    .Socials a {
+        font-size: 26px;
+        margin-right: 8px;
+    }
+
+    .about_Image {
+        height: 18rem; 
+    }
+
+    .about_Buttons .download-link {
+        font-size: 0.9rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .footer-userdesc {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .footer-text>pre {
+
+        text-align: center;
+    }
+
+    .footer-text>p {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+}
+
+/*  Laptops and Desktops */
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+    .contactpage-heading>h1 {
+        font-size: 5rem;
+    }
+
+    .contact-container {
+        padding: 3rem;
+    }
+
+    .About-container {
+        flex-direction: column;
+        padding: 20px;
+        margin: 1rem;
+    }
+
+    .carousel_sociallinks_container {
+        margin: 1.5rem;
+        gap: 25px;
+    }
+
+    .skills_Container {
+        width: 63%;
+    }
+
+    .SocialLinks_Container {
+        width: 30%;
+        padding: 30px;
+    }
+
+    .Socials {
+        font-size: 2.3rem;
+        gap: 5px;
+    }
+
+    .Socials a {
+        font-size: 20px;
+    }
+
+    .footer-container {
+        padding: 30px;
+    }
+
+    .footer-userdesc {
+        font-size: 5rem;
+    }
+
+    .field>textarea {
+        width: 20rem;
+    }
+
+    .submit-btn {
+        width: 20rem;
+    }
+
+
+    .field>input {
+        width: 20rem;
+    }
+
+}
+
+/* Extra Large Screens */
+
+@media (min-width: 1201px) {
+
+    .contactpage-heading>h1 {
+        font-size: 6rem;
+    }
+
+    .skills_Container {
+            width: 60%;
+    }
+    
+    .SocialLinks_Container {
+            width: 33%;
+    }
+    
+    .Socials {
+            gap: 5px;
+    }
+
+    .field>textarea {
+        width: 30rem;
+    }
+
+    .submit-btn {
+        width: 30rem;
+    }
+
+
+    .field>input {
+        width: 30rem;
+    }
+
+}
