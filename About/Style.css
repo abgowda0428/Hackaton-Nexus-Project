@@ -16,6 +16,66 @@ body {
     flex-direction: column;
 }
 
+/* Nav-Bar */
+
+.Header {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+.navbar {
+    background-color:#161b22;
+    padding: 30px 0;
+    width: 100vw;
+}
+
+.navbaritems {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin: auto;
+    width: fit-content;
+}
+
+
+
+.navbaritems a {
+    color: white;
+    text-decoration: none;
+}
+
+.about-nav{
+    color: #d5ff3f;
+}
+
+
+
+.about-nav, .contact-nav, .home-nav, .projects-nav {
+    font-family: Nunito;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+header {
+    display: none;
+}
+
+
 /* Head */
 
 .contactpage-heading {
@@ -92,6 +152,7 @@ p {
     color:#d5ff3f;
     font-weight: 500;
 }
+
 
 .about_Buttons .download-link {
     display: flex;
@@ -535,24 +596,14 @@ p {
     }
     
     .SocialLinks_Container {
-            width: 33%;
+            width: 34%;
     }
     
     .Socials {
             gap: 5px;
     }
 
-    .field>textarea {
-        width: 30rem;
+    .carousel-content > img{
+       margin: 0.5rem;
     }
-
-    .submit-btn {
-        width: 30rem;
-    }
-
-
-    .field>input {
-        width: 30rem;
-    }
-
 }
